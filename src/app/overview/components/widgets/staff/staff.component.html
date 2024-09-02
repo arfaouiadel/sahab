@@ -1,0 +1,26 @@
+<div class="surface-card shadow-2 border-round">
+  <div class="flex justify-content-between align-items-center p-3 pb-0">
+    <span class="text-xl text-900 font-medium">Staff</span>
+    <div>
+      <button pbutton="" pripple="" icon="pi pi-ellipsis-v" class="p-element p-ripple p-button-text p-button-plain p-button-rounded p-button p-component p-button-icon-only"><span class="p-button-icon pi pi-ellipsis-v" aria-hidden="true"></span><span class="p-ink"></span></button>
+    </div>
+  </div>
+  <p-divider></p-divider>
+  <ul class="list-none pt-0 p-3">
+    <li *ngFor="let staff of staffList" class="staff-member flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
+      <div class="flex">
+        <img [src]="staff.image" alt="{{ staff.name }}" class="mr-3" style="width: 45px; height: 45px;">
+        <div>
+          <span class="block text-900 font-medium mb-1">{{ staff.name }}</span>
+          <div class="text-600">{{ staff.function }}</div>
+        </div>
+      </div>
+      <div class="mt-2 md:mt-0 flex flex-nowrap align-items-center">
+        <p-tag [severity]="getPresenceStatus(staff).class" value="{{ staff.presenceStatus }}"/>
+        <button pbutton="" pripple="" icon="pi-info-circle text-xl" class="p-element p-ripple p-button-text p-button-plain p-button-rounded mr-1 p-button p-component p-button-icon-only">
+          <span class="p-button-icon pi pi-info-circle text-xl" aria-hidden="true"></span>
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>

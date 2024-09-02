@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alice Johnson",
+    "function": "Paramedic Specialist",
+    "image": "assets/images/staff/avatar.png",
+    "presenceStatus": "Attending"
+  },
+  {
+    "name": "Bob Smith",
+    "function": "ER Specialist",
+    "image": "assets/images/staff/avatar.png",
+    "presenceStatus": "Late"
+  },
+  {
+    "name": "Carol Lee",
+    "function": "Paramedic Specialist",
+    "image": "assets/images/staff/avatar.png",
+    "presenceStatus": "Attending"
+  },
+  {
+    "name": "David Brown",
+    "function": "Driver",
+    "image": "assets/images/staff/avatar.png",
+    "presenceStatus": "Attending"
+  },
+  {
+    "name": "Eva Green",
+    "function": "Paramedic Specialist",
+    "image": "assets/images/staff/avatar.png",
+    "presenceStatus": "Present"
+  }
+]

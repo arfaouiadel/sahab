@@ -1,0 +1,23 @@
+<div class="flex flex-column flex-auto">
+  <div class="p-5">
+    <div class="text-900 font-semibold text-2xl mb-4">Overview</div>
+    <app-filter></app-filter>
+    <div class="grid mb-4">
+        @for (counter of counters; track counter; let i = $index) {
+          <div class="col-12 lg:col-6 xl:col">
+            <app-counter [counter]="counter"></app-counter>
+          </div>
+        }
+    </div>
+    <div class="grid mb-4">
+      <div class="col-12 xl:col-4">
+        @if (staffList) {
+          <app-staff [staffList]="staffList"></app-staff>
+        }
+      </div>
+      <div class="col-12 xl:col-8">
+        <app-map></app-map>
+      </div>
+    </div>
+  </div>
+</div>

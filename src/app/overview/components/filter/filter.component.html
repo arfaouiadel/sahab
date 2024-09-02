@@ -1,0 +1,24 @@
+<form class="grid" [formGroup]="filtersForm">
+  <div class="col-4 flex">
+    <div class="field col">
+      <p-multiSelect
+        class="grid text-base text-color border-1 border-solid surface-border border-round"
+        [options]="regions"
+        optionLabel="name"
+        placeholder="Select zone" />
+    </div>
+    <div class="field col">
+      <p-calendar
+        class="grid text-base text-color border-1 border-solid surface-border border-round"
+        formControlName="date"
+        dateFormat="M d, yy"
+        appendTo="body"
+      />
+    </div>
+  </div>
+  <div class="col-8 flex justify-content-end align-items-start">
+    <p-button label="No issues" class="mr-2 border-300	bg-white" icon="pi pi-check" iconPos="left" [outlined]="true" severity="contrast" />
+    <p-button label="Draft" class="mr-2 border-300	bg-white" icon="pi pi-info-circle" iconPos="left" [outlined]="true" severity="contrast" />
+    <p-button label="Submit" icon="pi pi-check" iconPos="right" />
+  </div>
+</form>
